@@ -22,6 +22,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  overflow: hidden;
 }
 
 .App-link {
@@ -32,7 +33,15 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+video {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  transform: rotateY(180deg);
 }
